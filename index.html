@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architektura świata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79cf52e935.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="main-page">
+
+    <header class="header section scrollspy" id="home">
+
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <h1 class="header__heading"><i class="fa-sharp fa-solid fa-building-columns"></i> Architektura świata</h1>
+        <hr>
+        <p class="header__text"> Najciekawsze miejsca!</p>
+    </header>
+
+
+    <nav class="nav__mobile nav__mobile__active">
+        <a class="nav__link" href="#home" class="active">Home</a>
+        <a class="nav__link" href="#aboutUs">O nas</a>
+        <a class="nav__link" href="#cities">Miasta</a>
+        <a class="nav__link" href="#countries">Państwa</a>
+        <a class="nav__link" href="#contact">Kontakt</a>
+    </nav>
+
+    <nav class="nav__desktop">
+        <a class="nav__link" href="#home" class="active">Home</a>
+        <a class="nav__link" href="#aboutUs">O nas</a>
+        <a class="nav__link" href="#cities">Miasta</a>
+        <a class="nav__link" href="#countries">Państwa</a>
+        <a class="nav__link" href="#contact">Kontakt</a>
+    </nav>
+
+    <main>
+        <section class="aboutus scrollspy" id="aboutUs">
+            <div class="wrapper">
+                <h2 class="aboutus__heading">o nas</h2>
+                <hr>
+
+
+                <div>
+
+                    <p><i class="fa-solid fa-thumbs-up"></i></p>
+                    <p class="aboutus__title">100%</p>
+                    <p class="aboutus__text">Zadowolonych klientów!</p>
+
+                    <p><i class="fas fa-trophy"></i></p>
+                    <p class="aboutus__title">28</p>
+                    <p class="aboutus__text">Zdobytych nagród!</p>
+
+                    <p><i class="fas fa-user-friends"></i></p>
+                    <p class="aboutus__title">123</p>
+                    <p class="aboutus__text">Pracowników!</p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="image scrollspy">
+            <hr>
+            <h2 class="image__heading">Jesteśmy po to aby zabrać Cię w piękne miejsca!</h2>
+            <hr>
+        </section>
+
+
+
+        <section class="cities scrollspy" id="cities">
+            <div class="wrapper">
+                <h2 class="cities__heading">Miasta</h2>
+                <hr>
+                <br>
+                <br>
+            </div>
+
+            <div class="cities__box">
+                <div class="cities__box__img">
+                    <img src="/img/brussels-640.jpg" alt="Atomium w Brukseli" class="cities__img">
+                </div>
+                <div class="cities__box__text">
+                    <h3 class="cities__title">Bruksela</h3>
+                    <p>Bruksela jest jednym z najważniejszych miast w Europie. Jest stolicą, administracyjnym,
+                        handlowym, finansowym i naukowym sercem Belgii. Większość instytucji o znaczeniu krajowym ma
+                        swoją siedzibę właśnie tutaj. Bruksela jest ponadto ważną europejską stolicą, z licznymi
+                        atrakcjami turystycznymi i kulturalnymi.</p>
+                </div>
+            </div>
+
+
+            <div class="cities__box">
+                <div class="cities__box__img">
+                    <img src="/img/florence-640.jpg" alt="Katedra Santa Maria del Fiore we Florencji"
+                        class="cities__img">
+                </div>
+                <div class="cities__box__text">
+                    <h3 class="cities__title">Florencja</h3>
+                    <p>Florencja – jest stolicą regionu Toskanii we Włoszech, z populacją około 366,5 tys. Miasto jest
+                        klejnotem kulturalnym, artystycznym i architektonicznym i znajduje się na liście światowego
+                        dziedzictwa UNESCO.</p>
+                </div>
+            </div>
+
+
+            <div class="cities__box">
+                <div class="cities__box__img">
+                    <img src="/img/new-york-640.jpg" alt="Chrysler Building w Nowym Jorku" class="cities__img">
+                </div>
+                <div class="cities__box__text">
+                    <h3 class="cities__title">New York</h3>
+                    <p>Nowy Jork leży na północnym wschodzie Stanów Zjednoczonych u wybrzeża Atlantyku. Jest to jedno z
+                        największych miast w USA (ok. 8,5 mln mieszkańców), które ma ogromne znaczenie światowe w
+                        kwestiach finansowych, politycznych, technologicznych i kulturalnych.</p>
+                </div>
+            </div>
+
+
+            <div class="cities__box">
+                <div class="cities__box__img">
+                    <img src="/img/budapest-640.jpg" alt="Budynek parlamentu w Budapeszcie" class="cities__img">
+                </div>
+                <div class="cities__box__text">
+                    <h3 class="cities__title">Budapeszt</h3>
+                    <p>Budapeszt zachwyca mnóstwem urokliwych placów, uliczek i pomników. Malowniczo położone nad
+                        Dunajem miasto słynie z pięknego, neogotyckiego gmachu Parlamentu oraz Góry Gellerta z
+                        XIX-wieczną cytadelą. Wyróżniającym się elementem krajobrazu tego miasta jest także arteria
+                        miejska Andrássy wybudowana w stylu eklektycznym.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="image2 scrollspy">
+            <hr>
+            <h2 class="image2__heading2">Poczuj wolność i zacznij z nami zwiedzać świat!</h2>
+            <hr>
+        </section>
+
+
+        <section class="countries scrollspy" id="countries">
+            <div class="wrapper">
+                <h2 class="countries__heading">Państwa</h2>
+                <hr>
+                <br>
+                <br>
+            </div>
+
+            <div class="countries__box">
+                <div class="countries__box__img countries__box__img--right">
+                    <img src="/img/ancient-640.jpg" alt="Domek z kamienia w Anglii" class="countries__img">
+                </div>
+                <div class="countries__box__text--right">
+                    <h3 class="countries__title">Anglia</h3>
+                    <p>Jest to największa i najludniejsza częścią Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii
+                        Północnej. W skład Zjednoczonego Królestwa oprócz Anglii wchodzi: Walia, Szkocja i Irlandia
+                        Północna.</p>
+                </div>
+            </div>
+
+            <div class="countries__box">
+                <div class="countries__box__img countries__box__img--right">
+                    <img src="/img/norway-640.jpg" alt="Budynki w Norwegii nad rzeką" class="countries__img">
+                </div>
+                <div class="countries__box__text--right">
+                    <h3 class="countries__title">Norwegia</h3>
+                    <p>Niemal 2/3 powierzchni kraju zajmują góry, charakterystycznym elementem krajobrazu jest też
+                        niezwykłe bogactwo fiordów oraz około 50 000 wysp położonych wzdłuż bardzo rozwiniętego
+                        wybrzeża.</p>
+                </div>
+            </div>
+
+            <div class="countries__box">
+                <div class="countries__box__img countries__box__img--right">
+                    <img src="/img/granada-640.jpg" alt="Willa w Hiszpani na wzgórzu" class="countries__img">
+                </div>
+                <div class="countries__box__text--right">
+                    <h3 class="countries__title">Hiszpania</h3>
+                    <p>Jest to atrakcyjny cel turystyczny, unikalne zabytki, zespoły miejskie, muzea oraz plaże nad
+                        Morzem Śródziemnym i góry.</p>
+                </div>
+            </div>
+
+            <div class="countries__box">
+                <div class="countries__box__img countries__box__img--right">
+                    <img src="/img/architecture-640.jpg" alt="Widok na domki z kopułowym dachem w Grecji"
+                        class="countries__img">
+                </div>
+                <div class="countries__box__text--right">
+                    <h3 class="countries__title">Grecja</h3>
+                    <p>Grecja to kraj uwielbiany przez turystów. Zachwyca malowniczym, zróżnicowanym krajobrazem,
+                        dostępem do czterech mórz i bogactwem około 2500 wysp. Znajdziemy tu plaże kamieniste, skaliste
+                        i piaskowe, często ukryte w przepięknych zatokach.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="contact scrollspy" id="contact">
+
+
+            <div class="wrapper">
+                <h2 class="contact__heading">Kontakt</h2>
+                <hr>
+
+
+                <form class="contact__form">
+
+                    <div class="contact__form-top">
+
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="wrapper">
+
+                <div class="footer__boxes">
+                    <div class="footer__box">
+                        <h3 class="footer__box-title"><i class="fa-sharp fa-solid fa-building-columns"></i> Architektura
+                            świata</h3>
+                        <p class="footer__box-text">Odwiedź nas na:</p>
+                        <div class="footer__box-social">
+                            <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p class="footer__box-text2">architektura.swiata</p>
+                    </div>
+
+
+
+                    <hr>
+                    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Architektura świata -
+                        Karolina Jesionek
+                    </p>
+
+
+        </footer>
+
+
+
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
