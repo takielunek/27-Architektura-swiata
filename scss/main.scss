@@ -2,6 +2,7 @@
 @import '../scss/colors';
 @import '../scss/components';
 
+
 *,
 *::before,
 *::after {
@@ -212,7 +213,7 @@ body {
 
 .countries {
 	position: relative;
-	height: 2800px;
+	height: 3200px;
 	margin-top: 6em;
 
 	&__img {
@@ -388,7 +389,7 @@ body {
 		background-image: url('../img/city-640.jpg');
 	}
 	.cities {
-		height: 3400px;
+		height: 3500px;
 		&__img {
 			width: 400px;
 		}
@@ -481,7 +482,7 @@ body {
 	}
 
 	.cities {
-		height: 3600px;
+		height: 3900px;
 		&__img {
 			width: 450px;
 		}
@@ -503,7 +504,7 @@ body {
 	}
 
 	.countries {
-		height: 3400px;
+		height: 3600px;
 		&__img {
 			width: 450px;
 		}
@@ -571,7 +572,7 @@ body {
 		background-image: url('../img/city-640.jpg');
 	}
 	.cities {
-		height: 3700px;
+		height: 3600px;
 		&__img {
 			width: 550px;
 		}
@@ -592,7 +593,7 @@ body {
 		}
 	}
 	.countries {
-		height: 3400px;
+		height: 3500px;
 		&__img {
 			width: 550px;
 		}
@@ -679,7 +680,7 @@ body {
 		}
 	}
 	.countries {
-		height: 3400px;
+		height: 3600px;
 		&__img {
 			width: 650px;
 		}
