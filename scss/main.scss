@@ -2,7 +2,6 @@
 @import '../scss/colors';
 @import '../scss/components';
 
-
 *,
 *::before,
 *::after {
@@ -24,7 +23,7 @@ body {
 
 .header {
 	position: relative;
-	padding: 4em;
+	padding: 60px;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
@@ -46,17 +45,15 @@ body {
 
 .hamburger {
 	position: absolute;
-	top: 3em;
-	right: 1em;
+	top: 30px;
+	right: 30px;
 	transform: translateY(-50%);
 	z-index: 100;
+	background-color: none;
+	font-size: 1.3rem;
 
-	&-inner,
-	&-inner::before,
-	&-inner::after {
-		background-color: $white;
-		z-index: 100;
-
+	&:hover {
+		color: $white;
 	}
 }
 
@@ -86,13 +83,13 @@ body {
 		position: absolute;
 		width: 100%;
 		height: 80px;
-		padding: 0.7em;
+		padding: 18px;
 		text-align: center;
 		background-color: $main-color;
 	}
 
 	&__link {
-		margin: 2em;
+		margin: 45px;
 		text-transform: uppercase;
 		text-decoration: none;
 		font-size: 1.8rem;
@@ -113,8 +110,8 @@ body {
 	position: relative;
 	text-align: center;
 	height: 1200px;
-	margin-top: 4em;
-	padding: 4em 8em;
+	margin-top: 90px;
+	padding: 100px 200px;
 
 	&__heading {
 		font-size: 3rem;
@@ -124,8 +121,8 @@ body {
 	}
 
 	i {
-		margin-top: 1.5em;
-		margin-bottom: 0.2em;
+		margin-top: 80px;
+		margin-bottom: 15px;
 		font-size: 4rem;
 		color: $main-color;
 		text-shadow: 0 0 2px #000;
@@ -144,11 +141,11 @@ body {
 	position: relative;
 	text-align: center;
 	height: 1400px;
-	padding: 16em 8em;
+	padding: 1000px 530px;
 	@include firstImg('../img/mannheim-640.jpg');
 
 	&__heading {
-		padding: 1em 5em;
+		padding: 70px 300px;
 		font-size: 3rem;
 		text-transform: uppercase;
 		font-family: 'Open Sans', sans-serif;
@@ -161,7 +158,7 @@ body {
 .cities {
 	position: relative;
 	height: 2800px;
-	margin-top: 6em;
+	margin-top: 200px;
 
 	&__img {
 		box-shadow: 5px 5px 10px;
@@ -176,17 +173,17 @@ body {
 	}
 
 	&__box {
-		padding: 3em 5em;
+		padding: 100px 300px;
 		display: flex;
 
 		&__text {
-			padding: 1em 2em;
+			padding: 50px 100px;
 			font-size: 1.4rem;
 		}
 	}
 
 	&__title {
-		padding: 1em 3em;
+		padding: 50px 100px;
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		font-weight: normal;
@@ -197,11 +194,11 @@ body {
 	position: relative;
 	text-align: center;
 	height: 1400px;
-	padding: 25em 8em;
+	padding: 1000px 530px;
 	@include firstImg('../img/city-640.jpg');
 
 	&__heading2 {
-		padding: 1em 5em;
+		padding: 70px 300px;
 		font-size: 3rem;
 		text-transform: uppercase;
 		font-family: 'Open Sans', sans-serif;
@@ -214,7 +211,7 @@ body {
 .countries {
 	position: relative;
 	height: 3200px;
-	margin-top: 6em;
+	margin-top: 200px;
 
 	&__img {
 		box-shadow: 5px 5px 10px;
@@ -229,14 +226,14 @@ body {
 	}
 
 	&__box {
-		padding: 3em 3em;
+		padding: 100px 300px;
 		display: flex;
 		flex-direction: row;
 
 		&__text--right {
 			text-align: right;
 			font-size: 1.4rem;
-			padding: 1em 2em;
+			padding: 50px 100px;
 		}
 
 		&__img--right {
@@ -245,7 +242,7 @@ body {
 	}
 
 	&__title {
-		padding: 1em 3em;
+		padding: 50px 100px;
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		font-weight: normal;
@@ -254,7 +251,7 @@ body {
 
 .contact {
 	position: relative;
-	padding: 4em;
+	padding: 100px;
 	height: 1000px;
 	background-color: $grey;
 	overflow: hidden;
@@ -275,8 +272,8 @@ body {
 	}
 
 	&__form-label {
-		margin-top: 2rem;
-		margin-bottom: 1rem;
+		margin-top: 30px;
+		margin-bottom: 25px;
 		color: $white;
 		text-transform: uppercase;
 	}
@@ -293,7 +290,7 @@ body {
 
 	&__form-btn {
 		background-color: $white;
-		padding: 1em;
+		padding: 12px;
 		width: 100%;
 		max-width: 300px;
 		border: none;
@@ -313,13 +310,13 @@ body {
 	color: $grey;
 
 	&__box-text {
-		padding: 2em;
+		padding: 20px;
 		text-transform: uppercase;
 		font-family: 'Open Sans', sans-serif;
 	}
 
 	&__box-title {
-		padding: 2em;
+		padding: 40px;
 		font-family: 'Lobster', cursive;
 		font-size: 2rem;
 		text-align: center;
@@ -327,17 +324,19 @@ body {
 
 	&__box-link {
 		font-size: 3rem;
-		padding: 3.6em;
+		margin-top: 60px;
+		margin-left: 190px;
+		margin-right: 150px;
 		color: $grey;
 	}
 
 	&__box-text2 {
-		padding: 2em;
+		padding: 40px;
 		text-align: center;
 	}
 
 	&__bottom-text {
-		padding: 1em;
+		padding: 20px;
 		text-align: center;
 	}
 }
@@ -345,7 +344,7 @@ body {
 @media (max-width: 576px) {
 	.header {
 		background-image: url('../img/bridge-640.jpg');
-		padding: 1em;
+		padding: 20px;
 		height: 50vh;
 
 		&__heading {
@@ -358,6 +357,10 @@ body {
 	}
 
 	.aboutus {
+		margin-top: 45px;
+		padding: 50px 100px;
+		height: 900px;
+
 		&__heading {
 			font-size: 2.2rem;
 		}
@@ -374,11 +377,12 @@ body {
 	.image,
 	.image2 {
 		height: 800px;
-		padding: 10em 2em;
+		padding: 300px 40px;
 
 		&__heading,
 		&__heading2 {
-			font-size: 1.7rem;
+			padding: 40px 80px;
+			font-size: 1.9rem;
 		}
 	}
 
@@ -389,42 +393,46 @@ body {
 		background-image: url('../img/city-640.jpg');
 	}
 	.cities {
-		height: 3500px;
+		height: 3100px;
+		margin-top: 0;
+		padding: 60px 40px;
 		&__img {
-			width: 400px;
+			width: 350px;
 		}
 
 		&__box {
-			padding: 0em 2em;
+			padding: 0px 20px;
 			flex-direction: column;
 
 			&__text {
-				padding: 1em 1em;
-				margin-bottom: 2em;
+				padding: 10px 30px;
+				margin-bottom: 50px;
 			}
 			&__img {
 				text-align: center;
 			}
 		}
 		&__title {
-			padding: 1em 2em;
+			padding: 20px 10px;
 			text-align: center;
 		}
 	}
 
 	.countries {
-		height: 3100px;
+		height: 2900px;
+		margin-top: 0;
+		padding: 60px 40px;
 		&__img {
 			width: 400px;
 		}
 
 		&__box {
-			padding: 0em 2em;
+			padding: 0px 20px;
 			flex-direction: column;
 
 			&__text--right {
-				padding: 1em 1em;
-				margin-bottom: 2em;
+				padding: 10px 30px;
+				margin-bottom: 50px;
 				text-align: left;
 			}
 			&__img {
@@ -432,16 +440,23 @@ body {
 			}
 		}
 		&__title {
-			padding: 1em 2em;
+			padding: 20px 10px;
 			text-align: center;
 		}
+	}
+
+	.contact {
+		padding: 70px 40px;
+	}
+	.footer {
+		padding: 60px 40px;
 	}
 }
 
 @media (min-width: 576px) {
 	.header {
 		background-image: url('../img/bridge-640.jpg');
-		padding: 1em;
+		padding: 20px;
 		height: 60vh;
 
 		&__heading {
@@ -454,6 +469,10 @@ body {
 	}
 
 	.aboutus {
+		margin-top: 45px;
+		padding: 50px 100px;
+		height: 950px;
+
 		&__title {
 			font-size: 2rem;
 		}
@@ -465,11 +484,12 @@ body {
 
 	.image,
 	.image2 {
-		height: 800px;
-		padding: 10em 2em;
+		height: 900px;
+		padding: 350px 40px;
 
 		&__heading,
 		&__heading2 {
+			padding: 40px 80px;
 			font-size: 2.2rem;
 		}
 	}
@@ -482,40 +502,47 @@ body {
 	}
 
 	.cities {
-		height: 3900px;
+		height: 2900px;
+		margin-top: 0;
+		padding: 80px 40px;
+
 		&__img {
 			width: 450px;
 		}
 
 		&__box {
 			flex-direction: column;
-			padding: 2em 5em;
+			padding: 0px 20px;
 			&__text {
-				padding: 1em 1em;
+				padding: 10px 30px;
+				margin-bottom: 50px;
 			}
 			&__img {
 				text-align: center;
 			}
 		}
 		&__title {
-			padding: 1em 2em;
+			padding: 20px 10px;
 			text-align: center;
 		}
 	}
 
 	.countries {
-		height: 3600px;
+		height: 2800px;
+		margin-top: 0;
+		padding: 80px 40px;
+
 		&__img {
 			width: 450px;
 		}
 
 		&__box {
-			padding: 2em 5em;
+			padding: 0px 20px;
 			flex-direction: column;
 
 			&__text--right {
-				padding: 1em 1em;
-				margin-bottom: 2em;
+				padding: 10px 30px;
+				margin-bottom: 50px;
 				text-align: left;
 			}
 			&__img {
@@ -523,8 +550,18 @@ body {
 			}
 		}
 		&__title {
-			padding: 1em 2em;
+			padding: 20px 10px;
 			text-align: center;
+		}
+	}
+	.contact {
+		padding: 70px 40px;
+	}
+	.footer {
+		padding: 60px 40px;
+
+		&__box-link {
+			margin-left: 300px;
 		}
 	}
 }
@@ -532,7 +569,7 @@ body {
 @media (min-width: 768px) {
 	.header {
 		background-image: url('../img/bridge-640.jpg');
-		padding: 1em;
+		padding: 30px;
 		height: 70vh;
 
 		&__heading {
@@ -545,6 +582,10 @@ body {
 	}
 
 	.aboutus {
+		margin-top: 0px;
+		padding: 100px;
+		height: 1000px;
+
 		&__title {
 			font-size: 2.3rem;
 		}
@@ -557,10 +598,11 @@ body {
 	.image,
 	.image2 {
 		height: 1200px;
-		padding: 10em 2em;
+		padding: 450px 40px;
 
 		&__heading,
 		&__heading2 {
+			padding: 40px 80px;
 			font-size: 2.8rem;
 		}
 	}
@@ -572,39 +614,45 @@ body {
 		background-image: url('../img/city-640.jpg');
 	}
 	.cities {
-		height: 3600px;
+		height: 3200px;
+		margin-top: 0;
+		padding: 80px 40px;
+
 		&__img {
 			width: 550px;
 		}
 
 		&__box {
 			flex-direction: column;
-			padding: 1.5em 5em;
+			padding: 0px 20px;
 			&__text {
-				padding: 1em 1em;
-			}
-			&__img {
-				text-align: center;
+				padding: 10px 60px;
+				margin-bottom: 50px;
 			}
 		}
+		&__img {
+			text-align: center;
+		}
+
 		&__title {
-			padding: 1em 1em;
+			padding: 20px 10px;
 			text-align: center;
 		}
 	}
+
 	.countries {
-		height: 3500px;
+		height: 3000px;
 		&__img {
 			width: 550px;
 		}
 
 		&__box {
-			padding: 1.5em 5em;
+			padding: 0px 20px;
 			flex-direction: column;
 
 			&__text--right {
-				padding: 1em 0.5em;
-				margin-bottom: 2em;
+				padding: 10px 30px;
+				margin-bottom: 50px;
 				text-align: left;
 			}
 			&__img {
@@ -612,183 +660,230 @@ body {
 			}
 		}
 		&__title {
-			padding: 1em 1em;
+			padding: 20px 10px;
 			text-align: center;
 		}
-	}
-}
-
-@media (min-width: 992px) {
-	.hamburger {
-		display: none;
-	}
-
-	.nav__desktop {
-		display: block;
-	}
-
-	.header {
-		background-image: url('../img/bridge-1920.jpg');
-		padding: 1em;
-		height: 80vh;
-
-		&__heading {
-			font-size: 5rem;
+		.contact {
+			padding: 70px 40px;
 		}
+		.footer {
+			padding: 60px 40px;
 
-		&__text {
-			font-size: 2rem;
+			&__box-link {
+				margin-left: 300px;
+			}
 		}
 	}
 
-	.image,
-	.image2 {
-		height: 1200px;
-		padding: 10em 2em;
-
-		&__heading,
-		&__heading2 {
-			font-size: 2.8rem;
-		}
-	}
-
-	.image {
-		background-image: url('../img/mannheim-1920.jpg');
-	}
-	.image2 {
-		background-image: url('../img/city-1920.jpg');
-	}
-
-	.cities {
-		&__img {
-			width: 650px;
+	@media (min-width: 992px) {
+		.hamburger {
+			display: none;
 		}
 
-		&__box {
-			flex-direction: column;
-			padding: 1.5em 5em;
+		.nav__desktop {
+			display: block;
+		}
+
+		.header {
+			background-image: url('../img/bridge-1920.jpg');
+			padding: 30px;
+			height: 80vh;
+
+			&__heading {
+				font-size: 5rem;
+			}
+
 			&__text {
-				padding: 1em 1em;
+				font-size: 2rem;
 			}
+		}
+		.aboutus {
+			margin-top: 100px;
+			padding: 100px;
+			height: 1000px;
+		}
+
+		.image,
+		.image2 {
+			height: 1200px;
+			padding: 500px 40px;
+
+			&__heading,
+			&__heading2 {
+				padding: 40px 80px;
+				font-size: 2.8rem;
+			}
+		}
+
+		.image {
+			background-image: url('../img/mannheim-1920.jpg');
+		}
+		.image2 {
+			background-image: url('../img/city-1920.jpg');
+		}
+
+		.cities {
+			height: 3400px;
+			margin-top: 0;
+			padding: 100px 40px;
+
 			&__img {
+				width: 650px;
+			}
+
+			&__box {
+				flex-direction: column;
+				padding: 0px 20px;
+				&__text {
+					padding: 10px 90px;
+					margin-bottom: 70px;
+				}
+				&__img {
+					text-align: center;
+				}
+			}
+			&__title {
+				padding: 20px 10px;
 				text-align: center;
 			}
 		}
-		&__title {
-			padding: 1em 1em;
-			text-align: center;
-		}
-	}
-	.countries {
-		height: 3600px;
-		&__img {
-			width: 650px;
-		}
-
-		&__box {
-			padding: 1.5em 5em;
-			flex-direction: column;
-
-			&__text--right {
-				padding: 1em 0.5em;
-				margin-bottom: 2em;
-				text-align: left;
-			}
+		.countries {
+			height: 3200px;
 			&__img {
+				width: 650px;
+			}
+
+			&__box {
+				padding: 0px 20px;
+				flex-direction: column;
+
+				&__text--right {
+					padding: 10px 90px;
+					margin-bottom: 50px;
+					text-align: left;
+				}
+				&__img {
+					text-align: center;
+				}
+			}
+			&__title {
+				padding: 20px 10px;
 				text-align: center;
 			}
 		}
-		&__title {
-			padding: 1em 1em;
-			text-align: center;
+		.contact {
+			padding: 70px 80px;
 		}
-	}
-}
+		.footer {
+			padding: 60px 40px;
 
-@media (min-width: 1100px) {
-	.hamburger {
-		display: none;
-	}
-
-	.nav__desktop {
-		display: block;
-	}
-
-	.header {
-		background-image: url('../img/bridge-1920.jpg');
-		padding: 4em;
-
-		&__heading {
-			font-size: 6rem;
-		}
-
-		&__text {
-			font-size: 2.5rem;
+			&__box-link {
+				margin-left: 300px;
+			}
 		}
 	}
 
-	.image,
-	.image2 {
-		height: 1400px;
-		padding: 25em 8em;
-
-		&__heading,
-		&__heading2 {
-			font-size: 3.3rem;
-		}
-	}
-
-	.image {
-		background-image: url('../img/mannheim-1920.jpg');
-	}
-	.image2 {
-		background-image: url('../img/city-1920.jpg');
-	}
-	.cities {
-		height: 2400px;
-		&__img {
-			width: 650px;
+	@media (min-width: 1100px) {
+		.hamburger {
+			display: none;
 		}
 
-		&__box {
-			flex-direction: row;
-			padding: 1.5em 5em;
+		.nav__desktop {
+			display: block;
+		}
+
+		.header {
+			background-image: url('../img/bridge-1920.jpg');
+			padding: 30px;
+
+			&__heading {
+				font-size: 6rem;
+			}
+
 			&__text {
-				padding: 1em 3em;
+				font-size: 2.5rem;
 			}
+		}
+
+		.image,
+		.image2 {
+			height: 1400px;
+			padding: 500px 40px;
+
+			&__heading,
+			&__heading2 {
+				padding: 40px 80px;
+				font-size: 3.3rem;
+			}
+		}
+
+		.image {
+			background-image: url('../img/mannheim-1920.jpg');
+		}
+		.image2 {
+			background-image: url('../img/city-1920.jpg');
+		}
+
+		.cities {
+			height: 2600px;
+			margin-top: 0;
+			padding: 100px 40px;
 
 			&__img {
+				width: 650px;
+			}
+
+			&__box {
+				flex-direction: row;
+				padding: 60px 40px;
+
+				&__text {
+					padding: 60px 90px;
+					margin-bottom: 0px;
+				}
+
+				&__img {
+					text-align: center;
+				}
+			}
+			&__title {
+				padding: 30px 10px;
 				text-align: center;
 			}
 		}
-		&__title {
-			padding: 1em 1em;
-			text-align: center;
-		}
-	}
 
-	.countries {
-		height: 2400px;
-		&__img {
-			width: 650px;
-		}
-
-		&__box {
-			padding: 1.5em 5em;
-			flex-direction: row;
-
-			&__text--right {
-				padding: 1em 3em;
-				margin-bottom: 2em;
-				text-align: right;
-			}
+		.countries {
+			height: 2600px;
 			&__img {
+				width: 650px;
+			}
+
+			&__box {
+				flex-direction: row;
+                padding: 60px 40px;
+
+				&__text--right {
+					padding:60px 90px;
+					margin-bottom: 0px;
+					text-align: right;
+				}
+				&__img {
+					text-align: center;
+				}
+			}
+			&__title {
+				padding: 30px 10px;
 				text-align: center;
 			}
 		}
-		&__title {
-			padding: 1em 1em;
-			text-align: center;
-		}
 	}
+	
+    .footer {
+        padding: 60px 40px;
+
+        &__box-link {
+            margin-left: 190px;
+        }
+    }
+
 }

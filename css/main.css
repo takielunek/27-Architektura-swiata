@@ -33,7 +33,7 @@ body {
 
 .header {
   position: relative;
-  padding: 4em;
+  padding: 60px;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -58,14 +58,15 @@ body {
 
 .hamburger {
   position: absolute;
-  top: 3em;
-  right: 1em;
+  top: 30px;
+  right: 30px;
   transform: translateY(-50%);
   z-index: 100;
+  background-color: none;
+  font-size: 1.3rem;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background-color: #fff;
-  z-index: 100;
+.hamburger:hover {
+  color: #fff;
 }
 
 .nav__mobile {
@@ -91,12 +92,12 @@ body {
   position: absolute;
   width: 100%;
   height: 80px;
-  padding: 0.7em;
+  padding: 18px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8392156863);
 }
 .nav__link {
-  margin: 2em;
+  margin: 45px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.8rem;
@@ -115,8 +116,8 @@ body {
   position: relative;
   text-align: center;
   height: 1200px;
-  margin-top: 4em;
-  padding: 4em 8em;
+  margin-top: 90px;
+  padding: 100px 200px;
 }
 .aboutus__heading {
   font-size: 3rem;
@@ -125,8 +126,8 @@ body {
   font-weight: normal;
 }
 .aboutus i {
-  margin-top: 1.5em;
-  margin-bottom: 0.2em;
+  margin-top: 80px;
+  margin-bottom: 15px;
   font-size: 4rem;
   color: rgba(0, 0, 0, 0.8392156863);
   text-shadow: 0 0 2px #000;
@@ -143,7 +144,7 @@ body {
   position: relative;
   text-align: center;
   height: 1400px;
-  padding: 16em 8em;
+  padding: 1000px 530px;
   background-image: url("../img/mannheim-640.jpg");
   background-size: cover;
   background-position: center;
@@ -151,7 +152,7 @@ body {
   background-color: rgba(0, 0, 0, 0.895);
 }
 .image__heading {
-  padding: 1em 5em;
+  padding: 70px 300px;
   font-size: 3rem;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -163,7 +164,7 @@ body {
 .cities {
   position: relative;
   height: 2800px;
-  margin-top: 6em;
+  margin-top: 200px;
 }
 .cities__img {
   box-shadow: 5px 5px 10px;
@@ -176,15 +177,15 @@ body {
   font-weight: normal;
 }
 .cities__box {
-  padding: 3em 5em;
+  padding: 100px 300px;
   display: flex;
 }
 .cities__box__text {
-  padding: 1em 2em;
+  padding: 50px 100px;
   font-size: 1.4rem;
 }
 .cities__title {
-  padding: 1em 3em;
+  padding: 50px 100px;
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: normal;
@@ -194,7 +195,7 @@ body {
   position: relative;
   text-align: center;
   height: 1400px;
-  padding: 25em 8em;
+  padding: 1000px 530px;
   background-image: url("../img/city-640.jpg");
   background-size: cover;
   background-position: center;
@@ -202,7 +203,7 @@ body {
   background-color: rgba(0, 0, 0, 0.895);
 }
 .image2__heading2 {
-  padding: 1em 5em;
+  padding: 70px 300px;
   font-size: 3rem;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -214,7 +215,7 @@ body {
 .countries {
   position: relative;
   height: 3200px;
-  margin-top: 6em;
+  margin-top: 200px;
 }
 .countries__img {
   box-shadow: 5px 5px 10px;
@@ -227,20 +228,20 @@ body {
   font-weight: normal;
 }
 .countries__box {
-  padding: 3em 3em;
+  padding: 100px 300px;
   display: flex;
   flex-direction: row;
 }
 .countries__box__text--right {
   text-align: right;
   font-size: 1.4rem;
-  padding: 1em 2em;
+  padding: 50px 100px;
 }
 .countries__box__img--right {
   order: 1;
 }
 .countries__title {
-  padding: 1em 3em;
+  padding: 50px 100px;
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: normal;
@@ -248,7 +249,7 @@ body {
 
 .contact {
   position: relative;
-  padding: 4em;
+  padding: 100px;
   height: 1000px;
   background-color: grey;
   overflow: hidden;
@@ -266,8 +267,8 @@ body {
   flex-direction: column;
 }
 .contact__form-label {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 30px;
+  margin-bottom: 25px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -290,7 +291,7 @@ body {
 }
 .contact__form-btn {
   background-color: #fff;
-  padding: 1em;
+  padding: 12px;
   width: 100%;
   max-width: 300px;
   border: none;
@@ -308,34 +309,36 @@ body {
   color: grey;
 }
 .footer__box-text {
-  padding: 2em;
+  padding: 20px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
 }
 .footer__box-title {
-  padding: 2em;
+  padding: 40px;
   font-family: "Lobster", cursive;
   font-size: 2rem;
   text-align: center;
 }
 .footer__box-link {
   font-size: 3rem;
-  padding: 3.6em;
+  margin-top: 60px;
+  margin-left: 190px;
+  margin-right: 150px;
   color: grey;
 }
 .footer__box-text2 {
-  padding: 2em;
+  padding: 40px;
   text-align: center;
 }
 .footer__bottom-text {
-  padding: 1em;
+  padding: 20px;
   text-align: center;
 }
 
 @media (max-width: 576px) {
   .header {
     background-image: url("../img/bridge-640.jpg");
-    padding: 1em;
+    padding: 20px;
     height: 50vh;
   }
   .header__heading {
@@ -343,6 +346,11 @@ body {
   }
   .header__text {
     font-size: 1.5rem;
+  }
+  .aboutus {
+    margin-top: 45px;
+    padding: 50px 100px;
+    height: 900px;
   }
   .aboutus__heading {
     font-size: 2.2rem;
@@ -356,12 +364,13 @@ body {
   .image,
   .image2 {
     height: 800px;
-    padding: 10em 2em;
+    padding: 300px 40px;
   }
   .image__heading, .image__heading2,
   .image2__heading,
   .image2__heading2 {
-    font-size: 1.7rem;
+    padding: 40px 80px;
+    font-size: 1.9rem;
   }
   .image {
     background-image: url("../img/mannheim-640.jpg");
@@ -370,53 +379,63 @@ body {
     background-image: url("../img/city-640.jpg");
   }
   .cities {
-    height: 3500px;
+    height: 3100px;
+    margin-top: 0;
+    padding: 60px 40px;
   }
   .cities__img {
-    width: 400px;
+    width: 350px;
   }
   .cities__box {
-    padding: 0em 2em;
+    padding: 0px 20px;
     flex-direction: column;
   }
   .cities__box__text {
-    padding: 1em 1em;
-    margin-bottom: 2em;
+    padding: 10px 30px;
+    margin-bottom: 50px;
   }
   .cities__box__img {
     text-align: center;
   }
   .cities__title {
-    padding: 1em 2em;
+    padding: 20px 10px;
     text-align: center;
   }
   .countries {
-    height: 3100px;
+    height: 2900px;
+    margin-top: 0;
+    padding: 60px 40px;
   }
   .countries__img {
     width: 400px;
   }
   .countries__box {
-    padding: 0em 2em;
+    padding: 0px 20px;
     flex-direction: column;
   }
   .countries__box__text--right {
-    padding: 1em 1em;
-    margin-bottom: 2em;
+    padding: 10px 30px;
+    margin-bottom: 50px;
     text-align: left;
   }
   .countries__box__img {
     text-align: center;
   }
   .countries__title {
-    padding: 1em 2em;
+    padding: 20px 10px;
     text-align: center;
+  }
+  .contact {
+    padding: 70px 40px;
+  }
+  .footer {
+    padding: 60px 40px;
   }
 }
 @media (min-width: 576px) {
   .header {
     background-image: url("../img/bridge-640.jpg");
-    padding: 1em;
+    padding: 20px;
     height: 60vh;
   }
   .header__heading {
@@ -424,6 +443,11 @@ body {
   }
   .header__text {
     font-size: 1.8rem;
+  }
+  .aboutus {
+    margin-top: 45px;
+    padding: 50px 100px;
+    height: 950px;
   }
   .aboutus__title {
     font-size: 2rem;
@@ -433,12 +457,13 @@ body {
   }
   .image,
   .image2 {
-    height: 800px;
-    padding: 10em 2em;
+    height: 900px;
+    padding: 350px 40px;
   }
   .image__heading, .image__heading2,
   .image2__heading,
   .image2__heading2 {
+    padding: 40px 80px;
     font-size: 2.2rem;
   }
   .image {
@@ -448,52 +473,66 @@ body {
     background-image: url("../img/city-640.jpg");
   }
   .cities {
-    height: 3900px;
+    height: 2900px;
+    margin-top: 0;
+    padding: 80px 40px;
   }
   .cities__img {
     width: 450px;
   }
   .cities__box {
     flex-direction: column;
-    padding: 2em 5em;
+    padding: 0px 20px;
   }
   .cities__box__text {
-    padding: 1em 1em;
+    padding: 10px 30px;
+    margin-bottom: 50px;
   }
   .cities__box__img {
     text-align: center;
   }
   .cities__title {
-    padding: 1em 2em;
+    padding: 20px 10px;
     text-align: center;
   }
   .countries {
-    height: 3600px;
+    height: 2800px;
+    margin-top: 0;
+    padding: 80px 40px;
   }
   .countries__img {
     width: 450px;
   }
   .countries__box {
-    padding: 2em 5em;
+    padding: 0px 20px;
     flex-direction: column;
   }
   .countries__box__text--right {
-    padding: 1em 1em;
-    margin-bottom: 2em;
+    padding: 10px 30px;
+    margin-bottom: 50px;
     text-align: left;
   }
   .countries__box__img {
     text-align: center;
   }
   .countries__title {
-    padding: 1em 2em;
+    padding: 20px 10px;
     text-align: center;
+  }
+  .contact {
+    padding: 70px 40px;
+  }
+  .footer {
+    padding: 60px 40px;
+  }
+  .footer__box-link {
+    margin-left: 300px;
   }
 }
 @media (min-width: 768px) {
   .header {
     background-image: url("../img/bridge-640.jpg");
-    padding: 1em;
+    padding: 30px;
     height: 70vh;
   }
   .header__heading {
@@ -501,6 +540,11 @@ body {
   }
   .header__text {
     font-size: 2rem;
+  }
+  .aboutus {
+    margin-top: 0px;
+    padding: 100px;
+    height: 1000px;
   }
   .aboutus__title {
     font-size: 2.3rem;
@@ -511,11 +555,12 @@ body {
   .image,
   .image2 {
     height: 1200px;
-    padding: 10em 2em;
+    padding: 450px 40px;
   }
   .image__heading, .image__heading2,
   .image2__heading,
   .image2__heading2 {
+    padding: 40px 80px;
     font-size: 2.8rem;
   }
   .image {
@@ -525,49 +570,61 @@ body {
     background-image: url("../img/city-640.jpg");
   }
   .cities {
-    height: 3600px;
+    height: 3200px;
+    margin-top: 0;
+    padding: 80px 40px;
   }
   .cities__img {
     width: 550px;
   }
   .cities__box {
     flex-direction: column;
-    padding: 1.5em 5em;
+    padding: 0px 20px;
   }
   .cities__box__text {
-    padding: 1em 1em;
+    padding: 10px 60px;
+    margin-bottom: 50px;
   }
-  .cities__box__img {
+  .cities__img {
     text-align: center;
   }
   .cities__title {
-    padding: 1em 1em;
+    padding: 20px 10px;
     text-align: center;
   }
   .countries {
-    height: 3500px;
+    height: 3000px;
   }
   .countries__img {
     width: 550px;
   }
   .countries__box {
-    padding: 1.5em 5em;
+    padding: 0px 20px;
     flex-direction: column;
   }
   .countries__box__text--right {
-    padding: 1em 0.5em;
-    margin-bottom: 2em;
+    padding: 10px 30px;
+    margin-bottom: 50px;
     text-align: left;
   }
   .countries__box__img {
     text-align: center;
   }
   .countries__title {
-    padding: 1em 1em;
+    padding: 20px 10px;
     text-align: center;
   }
+  .countries .contact {
+    padding: 70px 40px;
+  }
+  .countries .footer {
+    padding: 60px 40px;
+  }
+  .countries .footer__box-link {
+    margin-left: 300px;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   .hamburger {
     display: none;
   }
@@ -576,7 +633,7 @@ body {
   }
   .header {
     background-image: url("../img/bridge-1920.jpg");
-    padding: 1em;
+    padding: 30px;
     height: 80vh;
   }
   .header__heading {
@@ -585,14 +642,20 @@ body {
   .header__text {
     font-size: 2rem;
   }
+  .aboutus {
+    margin-top: 100px;
+    padding: 100px;
+    height: 1000px;
+  }
   .image,
   .image2 {
     height: 1200px;
-    padding: 10em 2em;
+    padding: 500px 40px;
   }
   .image__heading, .image__heading2,
   .image2__heading,
   .image2__heading2 {
+    padding: 40px 80px;
     font-size: 2.8rem;
   }
   .image {
@@ -601,47 +664,62 @@ body {
   .image2 {
     background-image: url("../img/city-1920.jpg");
   }
+  .cities {
+    height: 3400px;
+    margin-top: 0;
+    padding: 100px 40px;
+  }
   .cities__img {
     width: 650px;
   }
   .cities__box {
     flex-direction: column;
-    padding: 1.5em 5em;
+    padding: 0px 20px;
   }
   .cities__box__text {
-    padding: 1em 1em;
+    padding: 10px 90px;
+    margin-bottom: 70px;
   }
   .cities__box__img {
     text-align: center;
   }
   .cities__title {
-    padding: 1em 1em;
+    padding: 20px 10px;
     text-align: center;
   }
   .countries {
-    height: 3600px;
+    height: 3200px;
   }
   .countries__img {
     width: 650px;
   }
   .countries__box {
-    padding: 1.5em 5em;
+    padding: 0px 20px;
     flex-direction: column;
   }
   .countries__box__text--right {
-    padding: 1em 0.5em;
-    margin-bottom: 2em;
+    padding: 10px 90px;
+    margin-bottom: 50px;
     text-align: left;
   }
   .countries__box__img {
     text-align: center;
   }
   .countries__title {
-    padding: 1em 1em;
+    padding: 20px 10px;
     text-align: center;
   }
+  .contact {
+    padding: 70px 80px;
+  }
+  .footer {
+    padding: 60px 40px;
+  }
+  .footer__box-link {
+    margin-left: 300px;
+  }
 }
-@media (min-width: 1100px) {
+@media (min-width: 768px) and (min-width: 1100px) {
   .hamburger {
     display: none;
   }
@@ -650,7 +728,7 @@ body {
   }
   .header {
     background-image: url("../img/bridge-1920.jpg");
-    padding: 4em;
+    padding: 30px;
   }
   .header__heading {
     font-size: 6rem;
@@ -661,11 +739,12 @@ body {
   .image,
   .image2 {
     height: 1400px;
-    padding: 25em 8em;
+    padding: 500px 40px;
   }
   .image__heading, .image__heading2,
   .image2__heading,
   .image2__heading2 {
+    padding: 40px 80px;
     font-size: 3.3rem;
   }
   .image {
@@ -675,45 +754,56 @@ body {
     background-image: url("../img/city-1920.jpg");
   }
   .cities {
-    height: 2400px;
+    height: 2600px;
+    margin-top: 0;
+    padding: 100px 40px;
   }
   .cities__img {
     width: 650px;
   }
   .cities__box {
     flex-direction: row;
-    padding: 1.5em 5em;
+    padding: 60px 40px;
   }
   .cities__box__text {
-    padding: 1em 3em;
+    padding: 60px 90px;
+    margin-bottom: 0px;
   }
   .cities__box__img {
     text-align: center;
   }
   .cities__title {
-    padding: 1em 1em;
+    padding: 30px 10px;
     text-align: center;
   }
   .countries {
-    height: 2400px;
+    height: 2600px;
   }
   .countries__img {
     width: 650px;
   }
   .countries__box {
-    padding: 1.5em 5em;
     flex-direction: row;
+    padding: 60px 40px;
   }
   .countries__box__text--right {
-    padding: 1em 3em;
-    margin-bottom: 2em;
+    padding: 60px 90px;
+    margin-bottom: 0px;
     text-align: right;
   }
   .countries__box__img {
     text-align: center;
   }
   .countries__title {
-    padding: 1em 1em;
+    padding: 30px 10px;
     text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 60px 40px;
+  }
+  .footer__box-link {
+    margin-left: 190px;
   }
 }/*# sourceMappingURL=main.css.map */
